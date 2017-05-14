@@ -2,7 +2,11 @@
 <head>
 <title> Homepage redirect </title>
 <script>
-window.location.hostname = "jeroen.github.io"
+if(window.location.href.match("opencpu-server.pdf")){
+	window.location.href = "https://opencpu.github.io/opencpu-manual/opencpu-server.pdf"
+} else {
+	window.location.hostname = "jeroen.github.io"
+}
 </script>
 </head>
 <body>
